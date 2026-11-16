@@ -1,0 +1,83 @@
+{
+ "schema": "arc-port-text-golden/v1",
+ "upstream": {
+  "repo": "AIDotNet/TKCode.Arc",
+  "commit": "695a85d727772490c03ff6586455796d6f4af16f",
+  "source": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/DashboardPage.axaml"
+ },
+ "upstreamText": [
+  "Dashboard",
+  "How the business did over the last 30 days.",
+  "Revenue",
+  "This period against the one before.",
+  "This period",
+  "Previous period",
+  "vs. previous 30 days"
+ ],
+ "upstreamTextSha256": "b9911e50ace34a863d6c7779811a81d7113e06eddd153af660fd6d6d257c1bb8",
+ "sample": {
+  "customerCount": 64,
+  "firstCustomer": {
+   "id": "cus_1000",
+   "name": "Mara Brandt",
+   "email": "mara@brightline.example",
+   "company": "Brightline",
+   "plan": "Business",
+   "status": "Active",
+   "monthlyRevenue": 299,
+   "joined": "2024-08-07",
+   "country": "IN"
+  },
+  "lastCustomer": {
+   "id": "cus_1063",
+   "name": "Rafael Costa",
+   "email": "rafael@lumenlabs.example",
+   "company": "Lumen Labs",
+   "plan": "Enterprise",
+   "status": "Active",
+   "monthlyRevenue": 1200,
+   "joined": "2025-01-08",
+   "country": "GB"
+  },
+  "customersSha256": "2586c7e4d11c1976220c3f0f560141d48decca1fe751e7a2869d13e4015635e1",
+  "dashboardKpis": [
+   {
+    "label": "Monthly revenue",
+    "value": 23693,
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 0,
+    "change": "+8.2%"
+   },
+   {
+    "label": "Active customers",
+    "value": 52,
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0,
+    "change": "+12"
+   },
+   {
+    "label": "Trials",
+    "value": 8,
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0,
+    "change": "+3"
+   },
+   {
+    "label": "Net retention",
+    "value": 104.2,
+    "prefix": "",
+    "suffix": "%",
+    "decimals": 1,
+    "change": "+1.2%"
+   }
+  ],
+  "dashboardKpisSha256": "0c04fe84ab0120f02173ebbe9cbad84b9fa82791beb146ce7c0777067fea9e5f",
+  "daysCount": 30,
+  "revenueSha256": "169704c96e5b355c3393971e6e8e0fc00d48a524e7d14a5ad2cdeb556954e887",
+  "previousSha256": "2937974160915c86cfee547410569e552e28dfc5d1cd5df7de628e0016084345",
+  "context": "vs. previous 30 days"
+ }
+}

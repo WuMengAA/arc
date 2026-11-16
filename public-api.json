@@ -1,0 +1,8087 @@
+{
+ "schema": "arc-port-public-api/v1",
+ "portTag": "port/v0.1.0",
+ "upstream": {
+  "repo": "AIDotNet/TKCode.Arc",
+  "commit": "695a85d727772490c03ff6586455796d6f4af16f",
+  "describe": "v1.1.0-6-g695a85d7",
+  "license": "MIT"
+ },
+ "module": {
+  "uri": "arc",
+  "version": "1.0",
+  "registeredTypes": 125,
+  "qmldir": "qmldir",
+  "noCppPlugin": true,
+  "noQtQuickControls": true
+ },
+ "stability": {
+  "stable": "non-underscored properties / signals / functions of the 105 non-preview types; changing one requires a new port tag + BREAKING.md entry",
+  "preview": "Demo.qml, 12 showcase Page*.qml, AnalyticsApp.qml and 5 An*.qml; may change within a port minor without a breaking entry"
+ },
+ "previewTypes": [
+  "Demo",
+  "PageAnalytics",
+  "PageBilling",
+  "PageButtons",
+  "PageControls",
+  "PageControls2",
+  "PageControls3",
+  "PageControls4",
+  "PageFoundation",
+  "PageInteractions",
+  "PageLayout",
+  "PageMenus",
+  "PageMotion",
+  "PageSurfaces",
+  "AnalyticsApp",
+  "AnOverview",
+  "AnRetention",
+  "AnRevenue",
+  "AnStatus",
+  "AnUsage"
+ ],
+ "stableTypes": [
+  "ArcAccordion",
+  "ArcActionButton",
+  "ArcActionSwap",
+  "ArcAdminApp",
+  "ArcAlert",
+  "ArcAnnouncementBar",
+  "ArcAutoLayout",
+  "ArcAvatar",
+  "ArcBadge",
+  "ArcBarChart",
+  "ArcBillingToggle",
+  "ArcBottomSheet",
+  "ArcBreadcrumb",
+  "ArcButton",
+  "ArcButtonGroup",
+  "ArcCalendar",
+  "ArcCard",
+  "ArcCheckbox",
+  "ArcChipGroup",
+  "ArcCombobox",
+  "ArcConfirmMorph",
+  "ArcContentSwap",
+  "ArcContextMenu",
+  "ArcControlCenter",
+  "ArcCopyButton",
+  "ArcDatePicker",
+  "ArcDialog",
+  "ArcDockLayout",
+  "ArcDonutChart",
+  "ArcDrawer",
+  "ArcDropdownMenu",
+  "ArcEmptyState",
+  "ArcEnumSelector",
+  "ArcExpandableCard",
+  "ArcExpandingButtonGroup",
+  "ArcFloatingButtonGroup",
+  "ArcFocusRing",
+  "ArcGliding",
+  "ArcGridCell",
+  "ArcGridToolbar",
+  "ArcHoldToConfirm",
+  "ArcHoverCard",
+  "ArcIcon",
+  "ArcIconMorph",
+  "ArcImageViewer",
+  "ArcImportWizard",
+  "ArcInlineEdit",
+  "ArcInput",
+  "ArcKanbanBoard",
+  "ArcKanbanCard",
+  "ArcKanbanDrawer",
+  "ArcLineChart",
+  "ArcMenuPanel",
+  "ArcMetricCard",
+  "ArcMultiSelect",
+  "ArcPageHeader",
+  "ArcPagination",
+  "ArcPdfViewer",
+  "ArcPopover",
+  "ArcPresence",
+  "ArcProgress",
+  "ArcPulse",
+  "ArcRadialMenu",
+  "ArcRadioCards",
+  "ArcRadioGroup",
+  "ArcRating",
+  "ArcReactions",
+  "ArcResizablePanels",
+  "ArcRipple",
+  "ArcRollingNumber",
+  "ArcScrollArea",
+  "ArcSegmented",
+  "ArcSegmentedControl",
+  "ArcSelect",
+  "ArcSettingsPage",
+  "ArcSheetStack",
+  "ArcSidebarSection",
+  "ArcSidebarTree",
+  "ArcSkeleton",
+  "ArcSlider",
+  "ArcSparkline",
+  "ArcSpinner",
+  "ArcSplitButton",
+  "ArcSpreadsheet",
+  "ArcStepper",
+  "ArcStickyList",
+  "ArcSwipeActions",
+  "ArcSwitch",
+  "ArcTable",
+  "ArcTabs",
+  "ArcTextarea",
+  "ArcTheme",
+  "ArcThemeSwitcher",
+  "ArcToast",
+  "ArcToggleGroup",
+  "ArcTooltip",
+  "ArcTopBar",
+  "ArcUserMenu",
+  "ArcWorkflow",
+  "ArcWorkflowNode",
+  "PageCustomers",
+  "PageDashboard",
+  "PageSettings",
+  "PageTeam",
+  "Sidebar"
+ ],
+ "types": {
+  "AnOverview": {
+   "file": "AnOverview.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp (derived view)",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_k",
+    "_cw"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "AnRetention": {
+   "file": "AnRetention.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp (derived view)",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "segment",
+     "type": "string",
+     "default": "\"All\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_g",
+    "_r",
+    "_c",
+    "_v"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "AnRevenue": {
+   "file": "AnRevenue.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp (derived view)",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_r",
+    "_arr"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "AnStatus": {
+   "file": "AnStatus.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp (derived view)",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_s",
+    "_cw"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "AnUsage": {
+   "file": "AnUsage.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp (derived view)",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_e",
+    "_used",
+    "_budget"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "AnalyticsApp": {
+   "file": "AnalyticsApp.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAnalyticsApp",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "dark",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "accentIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "section",
+     "type": "string",
+     "default": "\"overview\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_options"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcAccordion": {
+   "file": "ArcAccordion.qml",
+   "upstream": "src/TKCode.Arc/**/Accordion.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "expandedIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "large",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_edge",
+    "_trigPadV",
+    "_trigH",
+    "_trigLH",
+    "_chev",
+    "_chevGap",
+    "_ansPadR",
+    "_ansPadB",
+    "_ansLH",
+    "_ansMax",
+    "_open",
+    "_ansW",
+    "_ansH"
+   ],
+   "signals": [
+    {
+     "name": "toggled",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "AccordionItem"
+   ]
+  },
+  "ArcActionButton": {
+   "file": "ArcActionButton.qml",
+   "upstream": "src/TKCode.Arc/**/ActionButton.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"Run action\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "icon",
+     "type": "string",
+     "default": "\"Play\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "stateName",
+     "type": "string",
+     "default": "\"idle\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_slot",
+    "_op",
+    "_glyph",
+    "_glyphColor"
+   ],
+   "signals": [
+    {
+     "name": "clicked",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ActionButton"
+   ]
+  },
+  "ArcActionSwap": {
+   "file": "ArcActionSwap.qml",
+   "upstream": "src/TKCode.Arc/**/ActionSwap.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tone",
+     "type": "string",
+     "default": "\"success\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Swap state\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sizeName",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "committed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_icon",
+    "_fill",
+    "_edge",
+    "_edgeHover"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ActionSwap"
+   ]
+  },
+  "ArcAdminApp": {
+   "file": "ArcAdminApp.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Views/MainView.axaml + App/Navigation/AppPages.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "themeObj",
+     "type": "alias",
+     "default": "theme",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "startDark",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "startAccent",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dark",
+     "type": "bool",
+     "default": "startDark",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "accentIndex",
+     "type": "int",
+     "default": "startAccent",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "customersData",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dashboardData",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "workspaceData",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "billingData",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "visibleSections",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "section",
+     "type": "string",
+     "default": "\"dashboard\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "collapsed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "navSections",
+     "type": "var",
+     "default": "filterSections([",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "setDark",
+     "args": "v",
+     "access": "public"
+    },
+    {
+     "name": "setAccent",
+     "args": "i",
+     "access": "public"
+    },
+    {
+     "name": "t",
+     "args": "key, fallback",
+     "access": "public"
+    },
+    {
+     "name": "filterSections",
+     "args": "list",
+     "access": "public"
+    },
+    {
+     "name": "titleFor",
+     "args": "key",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcAlert": {
+   "file": "ArcAlert.qml",
+   "upstream": "src/TKCode.Arc/**/Alert.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tone",
+     "type": "string",
+     "default": "\"info\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dismissible",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_padL",
+    "_padT",
+    "_glyph",
+    "_glyphTop",
+    "_glyphGap",
+    "_descGap",
+    "_dismissD",
+    "_edge",
+    "_r",
+    "_icon",
+    "_iconColor",
+    "_copyW"
+   ],
+   "signals": [
+    {
+     "name": "dismissed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Alert"
+   ]
+  },
+  "ArcAnnouncementBar": {
+   "file": "ArcAnnouncementBar.qml",
+   "upstream": "src/TKCode.Arc/**/AnnouncementBar.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "messages",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "inverted",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dismissible",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "navigable",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "index",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isShown",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_pxL",
+    "_pxT",
+    "_pxB",
+    "_gap",
+    "_iconD",
+    "_fg",
+    "_muted",
+    "_hover"
+   ],
+   "signals": [
+    {
+     "name": "dismissed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_next"
+   ],
+   "ctDomains": [
+    "AnnouncementBar"
+   ]
+  },
+  "ArcAutoLayout": {
+   "file": "ArcAutoLayout.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "mode",
+     "type": "string",
+     "default": "\"waterfall\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "columns",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "offset",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_wfMin",
+    "_wfGap",
+    "_tileMin",
+    "_tileGap",
+    "_autoCols",
+    "_cols",
+    "_tileCols",
+    "_cellW",
+    "_tileW",
+    "_layout",
+    "_wfH",
+    "_tileRows",
+    "_stageH",
+    "_a",
+    "_r"
+   ],
+   "signals": [],
+   "functions": [
+    {
+     "name": "computeLayout",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "computeFlow",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "WaterfallPanel",
+    "TilePanel"
+   ]
+  },
+  "ArcAvatar": {
+   "file": "ArcAvatar.qml",
+   "upstream": "src/TKCode.Arc/**/Avatar.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "seed",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "status",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "monochrome",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_d",
+    "_fs",
+    "_dot",
+    "_ring",
+    "_dotColor"
+   ],
+   "signals": [],
+   "functions": [
+    {
+     "name": "initials",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Avatar"
+   ]
+  },
+  "ArcBadge": {
+   "file": "ArcBadge.qml",
+   "upstream": "src/TKCode.Arc/Avatars/Badge/Badge.cs + BadgeToken.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tone",
+     "type": "string",
+     "default": "\"neutral\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "small",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "icon",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_edge",
+    "_neutral",
+    "_hover",
+    "_bg",
+    "_bd",
+    "_fg"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Badge"
+   ]
+  },
+  "ArcBarChart": {
+   "file": "ArcBarChart.qml",
+   "upstream": "src/TKCode.Arc/**/BarChart.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "values",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "labels",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "kind",
+     "type": "string",
+     "default": "\"Revenue\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "unit",
+     "type": "string",
+     "default": "\"$\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "plotHeight",
+     "type": "real",
+     "default": "160",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "yMax",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_gutter",
+    "_axisH",
+    "_barW",
+    "_gap",
+    "_peak",
+    "_avg",
+    "_plotW",
+    "_step"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [
+    "_fmt"
+   ],
+   "ctDomains": [
+    "BarChart"
+   ]
+  },
+  "ArcBillingToggle": {
+   "file": "ArcBillingToggle.qml",
+   "upstream": "src/TKCode.Arc/**/BillingToggle.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "period",
+     "type": "string",
+     "default": "\"year\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "monthly",
+     "type": "real",
+     "default": "24",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "yearly",
+     "type": "real",
+     "default": "19",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currency",
+     "type": "string",
+     "default": "\"$\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "large",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_optH",
+    "_inset",
+    "_px",
+    "_badgeH",
+    "_labelGap",
+    "_curSize",
+    "_wasIn",
+    "_rad"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string period)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "BillingToggle",
+    "BillingPrice"
+   ]
+  },
+  "ArcBottomSheet": {
+   "file": "ArcBottomSheet.qml",
+   "upstream": "src/TKCode.Arc/**/BottomSheet.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "actions",
+     "type": "alias",
+     "default": "_actions.data",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_padL",
+    "_padT",
+    "_grabW",
+    "_grabH",
+    "_close",
+    "_gap",
+    "_actM",
+    "_rad",
+    "_bodyPadT",
+    "_actH",
+    "_panelH"
+   ],
+   "signals": [
+    {
+     "name": "closed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "BottomSheetSurface",
+    "MenuSurface",
+    "BottomSheet"
+   ]
+  },
+  "ArcBreadcrumb": {
+   "file": "ArcBreadcrumb.qml",
+   "upstream": "src/TKCode.Arc/**/Breadcrumb.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "crumbs",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "maxVisible",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_gap",
+    "_sepSize",
+    "_sepGap",
+    "_padV",
+    "_padH",
+    "_crumbR",
+    "_lineH",
+    "_underlineO",
+    "_ellW",
+    "_rowH",
+    "_folded",
+    "_tail",
+    "_show",
+    "_overflow",
+    "_first",
+    "_cur",
+    "_off",
+    "_hover",
+    "_sepW",
+    "_labelW"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_shown",
+    "_isOverflow"
+   ],
+   "ctDomains": [
+    "Breadcrumb",
+    "BreadcrumbItem",
+    "Pagination"
+   ]
+  },
+  "ArcButton": {
+   "file": "ArcButton.qml",
+   "upstream": "src/TKCode.Arc/Buttons/Button/Button.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "icon",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "variant",
+     "type": "string",
+     "default": "\"primary\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "busy",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_pad",
+    "_hover",
+    "_down",
+    "_fg",
+    "_bg",
+    "_bd"
+   ],
+   "signals": [
+    {
+     "name": "clicked",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcButtonGroup": {
+   "file": "ArcButtonGroup.qml",
+   "upstream": "src/TKCode.Arc/**/ButtonGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "variant",
+     "type": "string",
+     "default": "\"outline\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "vertical",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_segW",
+    "_rad",
+    "_glyph",
+    "_solid",
+    "_segGap"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_idx"
+   ],
+   "ctDomains": [
+    "ButtonGroup",
+    "ButtonGroupItem"
+   ]
+  },
+  "ArcCalendar": {
+   "file": "ArcCalendar.qml",
+   "upstream": "src/TKCode.Arc/**/Calendar.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "year",
+     "type": "int",
+     "default": "2026",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "month",
+     "type": "int",
+     "default": "10",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selectedDay",
+     "type": "int",
+     "default": "14",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_daySz",
+    "_weekH",
+    "_edge",
+    "_navSz",
+    "_week",
+    "_monthName",
+    "_hdrH",
+    "_off",
+    "_d",
+    "_valid",
+    "_sel"
+   ],
+   "signals": [
+    {
+     "name": "picked",
+     "args": "(int year, int month, int day)"
+    },
+    {
+     "name": "navigated",
+     "args": "(int year, int month)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_firstWeekday",
+    "_days",
+    "_nav"
+   ],
+   "ctDomains": [
+    "MonthCalendar",
+    "Calendar"
+   ]
+  },
+  "ArcCard": {
+   "file": "ArcCard.qml",
+   "upstream": "src/TKCode.Arc/Cards/Card/Card.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "footer",
+     "type": "alias",
+     "default": "_footer.data",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showFooter",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_pad"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcCheckbox": {
+   "file": "ArcCheckbox.qml",
+   "upstream": "src/TKCode.Arc/**/Checkbox.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "checkState",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isInvalid",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_on",
+    "_box",
+    "_hit",
+    "_rad",
+    "_edge",
+    "_markColor",
+    "_bd",
+    "_path"
+   ],
+   "signals": [
+    {
+     "name": "toggled",
+     "args": "(int checkState)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Checkbox"
+   ]
+  },
+  "ArcChipGroup": {
+   "file": "ArcChipGroup.qml",
+   "upstream": "src/TKCode.Arc/**/ChipGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selected",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "multi",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_edge"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "pick",
+     "args": "o",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [
+    "_on"
+   ],
+   "ctDomains": [
+    "ChipGroup"
+   ]
+  },
+  "ArcCombobox": {
+   "file": "ArcCombobox.qml",
+   "upstream": "src/TKCode.Arc/**/Combobox.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"Search…\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "query",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_padL",
+    "_edge",
+    "_optH",
+    "_gap",
+    "_valueText",
+    "_filtered"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(var value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "pick",
+     "args": "o",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Combobox"
+   ]
+  },
+  "ArcConfirmMorph": {
+   "file": "ArcConfirmMorph.qml",
+   "upstream": "src/TKCode.Arc/**/ConfirmMorph.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Delete project\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "face",
+     "type": "string",
+     "default": "\"idle\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_inner",
+    "_trigger",
+    "_confirm",
+    "_answer"
+   ],
+   "signals": [
+    {
+     "name": "confirmed",
+     "args": "()"
+    },
+    {
+     "name": "cancelled",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ConfirmMorph"
+   ]
+  },
+  "ArcContentSwap": {
+   "file": "ArcContentSwap.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pages",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "mode",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "direction",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "enterOffset",
+     "type": "real",
+     "default": "24",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "autoPlay",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "autoInterval",
+     "type": "int",
+     "default": "3000",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_shown",
+    "_prev",
+    "_t",
+    "_off"
+   ],
+   "signals": [
+    {
+     "name": "swapped",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "swapTo",
+     "args": "i",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcContextMenu": {
+   "file": "ArcContextMenu.qml",
+   "upstream": "src/TKCode.Arc/**/ContextMenu.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "anchorX",
+     "type": "real",
+     "default": "16",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "anchorY",
+     "type": "real",
+     "default": "12",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_gap",
+    "_inset"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ContextMenu",
+    "MenuSurface"
+   ]
+  },
+  "ArcControlCenter": {
+   "file": "ArcControlCenter.qml",
+   "upstream": "src/TKCode.Arc.Special/Surfaces/ControlCenter/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "volume",
+     "type": "int",
+     "default": "64",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "brightness",
+     "type": "int",
+     "default": "78",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "wifi",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "bluetooth",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "focusMode",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "detail",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "di",
+     "type": "int",
+     "default": "index; property var md: modelData; property var host: root",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_panelR",
+    "_tileR",
+    "_onTint"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [
+    "_hex",
+    "_alpha",
+    "_dial"
+   ],
+   "ctDomains": [
+    "ControlCenter"
+   ]
+  },
+  "ArcCopyButton": {
+   "file": "ArcCopyButton.qml",
+   "upstream": "src/TKCode.Arc/**/CopyButton.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Copy\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "copyState",
+     "type": "string",
+     "default": "\"idle\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "iconOnly",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_gap",
+    "_op",
+    "_fg"
+   ],
+   "signals": [
+    {
+     "name": "copyRequested",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "CopyButton"
+   ]
+  },
+  "ArcDatePicker": {
+   "file": "ArcDatePicker.qml",
+   "upstream": "src/TKCode.Arc/**/DatePicker.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"Select a date\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_edge",
+    "_r",
+    "_gap",
+    "_btn",
+    "_popW",
+    "_popInset",
+    "_popGap",
+    "_pr",
+    "_parsed",
+    "_footerH"
+   ],
+   "signals": [
+    {
+     "name": "datePicked",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "p",
+     "args": "n",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [
+    "_fmt",
+    "_display"
+   ],
+   "ctDomains": [
+    "DatePicker"
+   ]
+  },
+  "ArcDialog": {
+   "file": "ArcDialog.qml",
+   "upstream": "src/TKCode.Arc/**/Dialog.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "confirmText",
+     "type": "string",
+     "default": "\"Confirm\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cancelText",
+     "type": "string",
+     "default": "\"Cancel\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "closeOnScrim",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_w",
+    "_pad",
+    "_r",
+    "_edge",
+    "_close"
+   ],
+   "signals": [
+    {
+     "name": "accepted",
+     "args": "()"
+    },
+    {
+     "name": "rejected",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "DialogSurface",
+    "Dialog"
+   ]
+  },
+  "ArcDockLayout": {
+   "file": "ArcDockLayout.qml",
+   "upstream": "src/TKCode.Arc.Dock/DockLayout/*.cs + tests/TKCode.Arc.Tests/Docking/DockSamples.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showcase",
+     "type": "var",
+     "default": "Showcase.ArcShowcase.dock",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "activeTab",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "activeTool",
+     "type": "string",
+     "default": "\"Explorer\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "activeBottom",
+     "type": "string",
+     "default": "\"Terminal\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "leftW",
+     "type": "real",
+     "default": "218",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "outlineOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "floatX",
+     "type": "real",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "floatY",
+     "type": "real",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "codeText",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_rev",
+    "_pad",
+    "_gap",
+    "_tabH",
+    "_groupH",
+    "_readme",
+    "_appaxaml",
+    "_sx",
+    "_sx"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [
+    "_touch",
+    "_selectTab",
+    "_toggleOutline",
+    "_codeLines"
+   ],
+   "ctDomains": [
+    "DockLayout",
+    "DockTab",
+    "DockGroupView"
+   ]
+  },
+  "ArcDonutChart": {
+   "file": "ArcDonutChart.qml",
+   "upstream": "src/TKCode.Arc/**/DonutChart.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "segments",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "totalLabel",
+     "type": "string",
+     "default": "\"Total\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "centerValue",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "diameter",
+     "type": "real",
+     "default": "180",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "ringThickness",
+     "type": "real",
+     "default": "24",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showLegend",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_C",
+    "_ring"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [
+    "_total",
+    "_svg"
+   ],
+   "ctDomains": [
+    "DonutChart"
+   ]
+  },
+  "ArcDrawer": {
+   "file": "ArcDrawer.qml",
+   "upstream": "src/TKCode.Arc/**/Drawer.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "side",
+     "type": "string",
+     "default": "\"right\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_panel",
+    "_close",
+    "_gap",
+    "_secP",
+    "_radKey",
+    "_rad",
+    "_grabW",
+    "_grabH"
+   ],
+   "signals": [
+    {
+     "name": "closed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "DrawerSurface",
+    "Drawer"
+   ]
+  },
+  "ArcDropdownMenu": {
+   "file": "ArcDropdownMenu.qml",
+   "upstream": "src/TKCode.Arc/**/DropdownMenu.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Options\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "triggerIcon",
+     "type": "string",
+     "default": "\"SlidersHorizontal\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_gap",
+    "_trigGap",
+    "_icon",
+    "_chev",
+    "_stroke",
+    "_rad",
+    "_edge",
+    "_pressed"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "DropdownMenu"
+   ]
+  },
+  "ArcEmptyState": {
+   "file": "ArcEmptyState.qml",
+   "upstream": "src/TKCode.Arc/**/EmptyState.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "icon",
+     "type": "string",
+     "default": "\"Inbox\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "actionText",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "small",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_iconD",
+    "_pad",
+    "_titleTop",
+    "_descTop",
+    "_actionTop",
+    "_descMax",
+    "_edge",
+    "_iconR"
+   ],
+   "signals": [
+    {
+     "name": "actionClicked",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "EmptyState"
+   ]
+  },
+  "ArcEnumSelector": {
+   "file": "ArcEnumSelector.qml",
+   "upstream": "src/TKCode.Arc/**/EnumSelector.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "legend",
+     "type": "string",
+     "default": "\"Select values\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "mode",
+     "type": "string",
+     "default": "\"radio\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_legendM",
+    "_radioGap",
+    "_checkGap",
+    "_colGap",
+    "_rowH",
+    "_on"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_has"
+   ],
+   "ctDomains": [
+    "EnumSelector"
+   ]
+  },
+  "ArcExpandableCard": {
+   "file": "ArcExpandableCard.qml",
+   "upstream": "src/TKCode.Arc/**/ExpandableCard.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "expanded",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_padL",
+    "_padT",
+    "_minH",
+    "_chev",
+    "_descM",
+    "_dPadL",
+    "_dPadT",
+    "_dPadB",
+    "_div"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ExpandableCard"
+   ]
+  },
+  "ArcExpandingButtonGroup": {
+   "file": "ArcExpandingButtonGroup.qml",
+   "upstream": "src/TKCode.Arc/**/ExpandingButtonGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "expandedIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_inset",
+    "_gap",
+    "_glyph",
+    "_labelEnd",
+    "_done",
+    "_danger",
+    "_on"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ExpandingButtonGroupItem",
+    "ExpandingButtonGroup"
+   ]
+  },
+  "ArcFloatingButtonGroup": {
+   "file": "ArcFloatingButtonGroup.qml",
+   "upstream": "src/TKCode.Arc/**/FloatingButtonGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "vertical",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_ext",
+    "_gap",
+    "_inset",
+    "_rad",
+    "_hlRad",
+    "_tray",
+    "_hl",
+    "_edge",
+    "_unit"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_idx"
+   ],
+   "ctDomains": [
+    "FloatingButtonGroupItem",
+    "FloatingButtonGroup"
+   ]
+  },
+  "ArcFocusRing": {
+   "file": "ArcFocusRing.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "focused",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "keyboard",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "demoKeyboard",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "ringWidth",
+     "type": "real",
+     "default": "2",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "th ? th.c(\"Accent\") : \"#FF3B5DC9\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "ringVisible",
+     "type": "bool",
+     "default": "(root.focused || root.demoKeyboard) && (root.keyboard || root.demoKeyboard)",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [
+    {
+     "name": "focusGained",
+     "args": "()"
+    }
+   ],
+   "functions": [
+    {
+     "name": "simulateKey",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "simulatePointer",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcGliding": {
+   "file": "ArcGliding.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rects",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "activeIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "springName",
+     "type": "string",
+     "default": "\"Snappy\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "th ? th.c(\"Surface\") : \"#FFFFFFFF\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "borderColor",
+     "type": "color",
+     "default": "th ? th.c(\"Border\") : \"#FFE9E9E9\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showIndicator",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "r",
+     "type": "var",
+     "default": "root.rects.length > 0",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_dur",
+    "_ease"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcGridCell": {
+   "file": "ArcGridCell.qml",
+   "upstream": "src/TKCode.Arc.AdvancedCharts/DataGrid/DataGrid.Editing.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "colKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "editing",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "alignRight",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pad",
+     "type": "real",
+     "default": "12",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_submitting"
+   ],
+   "signals": [
+    {
+     "name": "committed",
+     "args": "(string value)"
+    },
+    {
+     "name": "cancelled",
+     "args": "()"
+    },
+    {
+     "name": "editRequested",
+     "args": "()"
+    }
+   ],
+   "functions": [
+    {
+     "name": "submitEdit",
+     "args": "txt",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcGridToolbar": {
+   "file": "ArcGridToolbar.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "grid",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcHoldToConfirm": {
+   "file": "ArcHoldToConfirm.qml",
+   "upstream": "src/TKCode.Arc/**/HoldToConfirm.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Hold to confirm\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tone",
+     "type": "string",
+     "default": "\"danger\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "holdMs",
+     "type": "real",
+     "default": "900",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "progress",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_px",
+    "_rad",
+    "_fill"
+   ],
+   "signals": [
+    {
+     "name": "confirmed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "HoldToConfirm"
+   ]
+  },
+  "ArcHoverCard": {
+   "file": "ArcHoverCard.qml",
+   "upstream": "src/TKCode.Arc/**/HoverCard.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "default": "\"Ada Lovelace\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "role",
+     "type": "string",
+     "default": "\"Product engineer\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "bio",
+     "type": "string",
+     "default": "\"Writes the design system and the release notes.\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "stats",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "triggerText",
+     "type": "string",
+     "default": "\"Hover over me\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "previewOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_cardW",
+    "_pad",
+    "_off",
+    "_headGap",
+    "_rowGap",
+    "_statGap",
+    "_statsPad"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "HoverCard",
+    "HoverCardProfile"
+   ]
+  },
+  "ArcIcon": {
+   "file": "ArcIcon.qml",
+   "upstream": "Lucide ISC glyph paths (Icons.js, 158 paths)",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "kind",
+     "type": "string",
+     "default": "\"Circle\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "\"#FF000000\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strokeWidth",
+     "type": "real",
+     "default": "1.75",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "filled",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "spin",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pathData",
+     "type": "string",
+     "default": "Icons.PATHS[kind] !== undefined ? Icons.PATHS[kind] : Icons.PATHS[\"Circle\"]",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcIconMorph": {
+   "file": "ArcIconMorph.qml",
+   "upstream": "src/TKCode.Arc/**/IconMorph.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "kindFrom",
+     "type": "string",
+     "default": "\"Menu\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "kindTo",
+     "type": "string",
+     "default": "\"X\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "progress",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tint",
+     "type": "color",
+     "default": "\"#FF000000\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "extent",
+     "type": "real",
+     "default": "24",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_e"
+   ],
+   "signals": [
+    {
+     "name": "toggled",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "IconMorph"
+   ]
+  },
+  "ArcImageViewer": {
+   "file": "ArcImageViewer.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "split",
+     "type": "real",
+     "default": "0.5",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "active",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "slides",
+     "type": "var",
+     "default": "[\"Studio\", \"Campus\", \"Lab\", \"Hall\"]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_chipH",
+    "_chipM",
+    "_chipPad",
+    "_ctlGap",
+    "_rowGap",
+    "_play"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ImageCompare",
+    "Carousel"
+   ]
+  },
+  "ArcImportWizard": {
+   "file": "ArcImportWizard.qml",
+   "upstream": "src/TKCode.Arc.Blocks/Blocks/Developer/ImportWizard/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showcase",
+     "type": "var",
+     "default": "Showcase.ArcShowcase.importWizard",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "step",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "mappedCount",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "importPct",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "openRow",
+     "type": "int",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rowIndex",
+     "type": "int",
+     "default": "index",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "oi",
+     "type": "int",
+     "default": "index",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_dropX",
+    "_dropY",
+    "_rev",
+    "_targets",
+    "_confirmed",
+    "_pad",
+    "_headT",
+    "_stepGap",
+    "_steps",
+    "_rows",
+    "_opts",
+    "_contacts"
+   ],
+   "signals": [
+    {
+     "name": "completed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_touch",
+    "_choose",
+    "_issue",
+    "_next"
+   ],
+   "ctDomains": [
+    "ImportWizard"
+   ]
+  },
+  "ArcInlineEdit": {
+   "file": "ArcInlineEdit.qml",
+   "upstream": "src/TKCode.Arc/**/InlineEdit.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"Click to edit\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "multiline",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "editing",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "invalid",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_padL",
+    "_padT",
+    "_edR",
+    "_minH",
+    "_act"
+   ],
+   "signals": [
+    {
+     "name": "saved",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "commit",
+     "args": "ok",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "InlineEdit"
+   ]
+  },
+  "ArcInput": {
+   "file": "ArcInput.qml",
+   "upstream": "src/TKCode.Arc/**/Input.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "error",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isInvalid",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "readOnly",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "password",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "revealPassword",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_padL",
+    "_padR",
+    "_invalid",
+    "_focus",
+    "_bd"
+   ],
+   "signals": [
+    {
+     "name": "textEdited",
+     "args": "(string text)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "FieldFrame",
+    "Input",
+    "Field",
+    "FieldTextBox",
+    "FieldMessage"
+   ]
+  },
+  "ArcKanbanBoard": {
+   "file": "ArcKanbanBoard.qml",
+   "upstream": "src/TKCode.Arc.Blocks/Screens/Projects/KanbanBoard/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showcase",
+     "type": "var",
+     "default": "Showcase.ArcShowcase.board",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "openedKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "laneKey",
+     "type": "string",
+     "default": "modelData.key",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_toolT",
+    "_toolL",
+    "_colW",
+    "_gap",
+    "_view",
+    "_rev",
+    "_dragActive",
+    "_dragKey",
+    "_dragX",
+    "_dragY",
+    "_dragSX",
+    "_dragSY",
+    "_cards"
+   ],
+   "signals": [
+    {
+     "name": "cardInvoked",
+     "args": "(string key)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_touch",
+    "_columnsFor",
+    "_cardByKey",
+    "_beginDrag",
+    "_moveDrag",
+    "_endDrag",
+    "_addCard",
+    "_removeCard",
+    "_moveNext"
+   ],
+   "ctDomains": [
+    "KanbanBoard"
+   ]
+  },
+  "ArcKanbanCard": {
+   "file": "ArcKanbanCard.qml",
+   "upstream": "src/TKCode.Arc.Blocks/Screens/Projects/KanbanBoard/KanbanCard.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "card",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "people",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "labels",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dragging",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dragEnabled",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dimmed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_label",
+    "_person",
+    "_pad",
+    "_metaH",
+    "_sx",
+    "_sy",
+    "_moved"
+   ],
+   "signals": [
+    {
+     "name": "invoked",
+     "args": "()"
+    },
+    {
+     "name": "dragBegun",
+     "args": "()"
+    },
+    {
+     "name": "dragMoved",
+     "args": "(real dx, real dy)"
+    },
+    {
+     "name": "dragEnded",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "KanbanBoard"
+   ]
+  },
+  "ArcKanbanDrawer": {
+   "file": "ArcKanbanDrawer.qml",
+   "upstream": "src/TKCode.Arc.Blocks/Screens/Projects/KanbanBoard/KanbanBoard.Details.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cardKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cardTitle",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "points",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "due",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [
+    {
+     "name": "moveNext",
+     "args": "()"
+    },
+    {
+     "name": "remove",
+     "args": "()"
+    },
+    {
+     "name": "closed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "KanbanBoard"
+   ]
+  },
+  "ArcLineChart": {
+   "file": "ArcLineChart.qml",
+   "upstream": "src/TKCode.Arc/Charts/LineChart/LineChart.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "days",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "seriesList",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "plotHeight",
+     "type": "real",
+     "default": "260",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "unit",
+     "type": "string",
+     "default": "\"$\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "gutter",
+     "type": "real",
+     "default": "root.th.n(\"chart\",\"GutterWidth\")",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "axisRow",
+     "type": "real",
+     "default": "root.th.n(\"chart\",\"AxisRowHeight\")",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "fmt",
+     "args": "v",
+     "access": "public"
+    },
+    {
+     "name": "bounds",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "onDarkChanged",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "onAccentIndexChanged",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcMenuPanel": {
+   "file": "ArcMenuPanel.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rowWidth",
+     "type": "real",
+     "default": "220",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "accountStyle",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_pad",
+    "_rad",
+    "_edge",
+    "_rowH",
+    "_rowIn",
+    "_rowRad",
+    "_glyph",
+    "_slot",
+    "_iconGap",
+    "_labelIn",
+    "_lineH",
+    "_hl",
+    "_danger",
+    "_sep"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "MenuSurface",
+    "MenuEntry",
+    "MenuEntryLabel",
+    "MenuEntrySeparator"
+   ]
+  },
+  "ArcMetricCard": {
+   "file": "ArcMetricCard.qml",
+   "upstream": "src/TKCode.Arc/Cards/MetricCard/MetricCard.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "prefix",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "suffix",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "decimals",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "change",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "context",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sparkValues",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "up",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_pad",
+    "_hasChange"
+   ],
+   "signals": [],
+   "functions": [
+    {
+     "name": "formatted",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcMultiSelect": {
+   "file": "ArcMultiSelect.qml",
+   "upstream": "src/TKCode.Arc/**/MultiSelect.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"Select tags…\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selected",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_edge",
+    "_optH",
+    "_gap",
+    "_chipH",
+    "_chosen"
+   ],
+   "signals": [
+    {
+     "name": "changed",
+     "args": "()"
+    }
+   ],
+   "functions": [
+    {
+     "name": "toggle",
+     "args": "v",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "MultiSelect"
+   ]
+  },
+  "ArcPageHeader": {
+   "file": "ArcPageHeader.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "subtitle",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcPagination": {
+   "file": "ArcPagination.qml",
+   "upstream": "src/TKCode.Arc/**/Pagination.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pageCount",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentPage",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "maxButtons",
+     "type": "int",
+     "default": "5",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_btn",
+    "_gap",
+    "_step",
+    "_disO",
+    "_ellW",
+    "_edge",
+    "_r",
+    "_ringR",
+    "_win",
+    "_first",
+    "_last",
+    "_leftEll",
+    "_rightEll",
+    "_slots",
+    "_totalW",
+    "_p",
+    "_cur"
+   ],
+   "signals": [
+    {
+     "name": "pageChanged",
+     "args": "(int page)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_go"
+   ],
+   "ctDomains": [
+    "Pagination"
+   ]
+  },
+  "ArcPdfViewer": {
+   "file": "ArcPdfViewer.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "page",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pageCount",
+     "type": "int",
+     "default": "12",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sidebarOpen",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "zoom",
+     "type": "real",
+     "default": "1.0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_toolH",
+    "_sideW",
+    "_thumbW",
+    "_thumbGap",
+    "_canvasPad",
+    "_pageGap",
+    "_numW",
+    "_zoomW"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "PageViewer",
+    "PdfViewer"
+   ]
+  },
+  "ArcPopover": {
+   "file": "ArcPopover.qml",
+   "upstream": "src/TKCode.Arc/**/Popover.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placement",
+     "type": "string",
+     "default": "\"bottom\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "triggerText",
+     "type": "string",
+     "default": "\"Open popover\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_minW",
+    "_maxW",
+    "_pad",
+    "_off",
+    "_gap"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "PopoverSurface",
+    "Popover"
+   ]
+  },
+  "ArcPresence": {
+   "file": "ArcPresence.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "present",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "mode",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "enterScale",
+     "type": "real",
+     "default": "0.92",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "offset",
+     "type": "real",
+     "default": "12",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "springName",
+     "type": "string",
+     "default": "\"Snappy\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "reveal",
+     "type": "real",
+     "default": "root.present ? 1 : 0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pose",
+     "type": "var",
+     "default": "root.th !== null ? root.th.presencePose(root.mode, root.reveal, root.enterScale, root.offset) : null",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [
+    {
+     "name": "exited",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcProgress": {
+   "file": "ArcProgress.qml",
+   "upstream": "src/TKCode.Arc/**/Progress.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "percentage",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isValueVisible",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_complete",
+    "_trackH",
+    "_fill",
+    "_metaGap",
+    "_readoutGap"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Progress"
+   ]
+  },
+  "ArcPulse": {
+   "file": "ArcPulse.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "count",
+     "type": "int",
+     "default": "3",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dotSize",
+     "type": "real",
+     "default": "10",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "gap",
+     "type": "real",
+     "default": "8",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "th ? th.c(\"Foreground\") : \"#FF1D1D1D\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "running",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "bars",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_t",
+    "_w"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcRadialMenu": {
+   "file": "ArcRadialMenu.qml",
+   "upstream": "src/TKCode.Arc/**/RadialMenu.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "centerLabel",
+     "type": "string",
+     "default": "\"Arc\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_ri",
+    "_ro",
+    "_gapDeg",
+    "_icon",
+    "_pad",
+    "_fill",
+    "_size"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_hex",
+    "_alpha",
+    "_svg"
+   ],
+   "ctDomains": [
+    "RadialMenu",
+    "RadialMenuItem"
+   ]
+  },
+  "ArcRadioCards": {
+   "file": "ArcRadioCards.qml",
+   "upstream": "src/TKCode.Arc/**/RadioCards.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "layout",
+     "type": "string",
+     "default": "\"grid\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_gap",
+    "_inset",
+    "_rad",
+    "_ind",
+    "_dot",
+    "_iconD",
+    "_ring",
+    "_bodyGap",
+    "_cols",
+    "_cw",
+    "_ch",
+    "_on"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "RadioCards"
+   ]
+  },
+  "ArcRadioGroup": {
+   "file": "ArcRadioGroup.qml",
+   "upstream": "src/TKCode.Arc/**/RadioGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "legend",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_legendGap",
+    "_rowGap",
+    "_inset",
+    "_markGap",
+    "_ringD",
+    "_ringR",
+    "_dotD",
+    "_dotR",
+    "_highlightR",
+    "_labelLH",
+    "_descLH",
+    "_descTop",
+    "_previewO",
+    "_edge",
+    "_r",
+    "_rowH",
+    "_on",
+    "_hover",
+    "_down"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(var value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "RadioGroup"
+   ]
+  },
+  "ArcRating": {
+   "file": "ArcRating.qml",
+   "upstream": "src/TKCode.Arc/**/Rating.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "max",
+     "type": "int",
+     "default": "5",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showValue",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "hoverValue",
+     "type": "real",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_cell",
+    "_glyph",
+    "_gap",
+    "_fieldGap",
+    "_shown"
+   ],
+   "signals": [
+    {
+     "name": "rated",
+     "args": "(real value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "portion",
+     "args": "i",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Rating"
+   ]
+  },
+  "ArcReactions": {
+   "file": "ArcReactions.qml",
+   "upstream": "src/TKCode.Arc/**/Reactions.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "reactions",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[\"👍\", \"❤️\", \"🎉\", \"🚀\", \"👀\"]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pickerOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_pillH",
+    "_pad",
+    "_gap",
+    "_font",
+    "_pickerPad",
+    "_optExtent",
+    "_rowGap",
+    "_colGap",
+    "_addW",
+    "_optGlyph"
+   ],
+   "signals": [
+    {
+     "name": "reacted",
+     "args": "(int index)"
+    },
+    {
+     "name": "added",
+     "args": "(string emoji)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Reactions"
+   ]
+  },
+  "ArcResizablePanels": {
+   "file": "ArcResizablePanels.qml",
+   "upstream": "src/TKCode.Arc/**/ResizablePanels.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "split",
+     "type": "real",
+     "default": "0.42",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "leftTitle",
+     "type": "string",
+     "default": "\"Explorer\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rightTitle",
+     "type": "string",
+     "default": "\"Editor\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_div",
+    "_min"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ResizablePanels",
+    "ResizablePanel"
+   ]
+  },
+  "ArcRipple": {
+   "file": "ArcRipple.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "waveColor",
+     "type": "color",
+     "default": "th ? th.fade(th.c(\"Foreground\"), 0.18) : \"#22000000\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "maxRadius",
+     "type": "real",
+     "default": "96",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "demo",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "clipWave",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "previewRadius",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cx",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cy",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_dur",
+    "_ease"
+   ],
+   "signals": [
+    {
+     "name": "triggered",
+     "args": "(real x, real y)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "spawn",
+     "args": "x, y",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcRollingNumber": {
+   "file": "ArcRollingNumber.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "columns",
+     "type": "int",
+     "default": "4",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "prefix",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "suffix",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "fontSize",
+     "type": "real",
+     "default": "32",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "th ? th.c(\"Foreground\") : \"#FF1D1D1D\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "springName",
+     "type": "string",
+     "default": "\"Snappy\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "demo",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "place",
+     "type": "int",
+     "default": "Math.pow(10, root.columns - 1 - index)",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "digit",
+     "type": "int",
+     "default": "Math.floor(Math.abs(root.value) / place) % 10",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "wheelPos",
+     "type": "real",
+     "default": "10 + digit",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_lineH",
+    "_digitW",
+    "_dur",
+    "_ease"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcScrollArea": {
+   "file": "ArcScrollArea.qml",
+   "upstream": "src/TKCode.Arc/**/ScrollArea.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rows",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "previewShown",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_track",
+    "_threshold",
+    "_inset"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ScrollArea",
+    "BackToTop"
+   ]
+  },
+  "ArcSegmented": {
+   "file": "ArcSegmented.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_trackInset",
+    "_gap",
+    "_segH",
+    "_on"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcSegmentedControl": {
+   "file": "ArcSegmentedControl.qml",
+   "upstream": "src/TKCode.Arc/**/SegmentedControl.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_inset",
+    "_segGap",
+    "_segIn",
+    "_selRad",
+    "_segRad",
+    "_accGap",
+    "_segW",
+    "_unit"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_idx"
+   ],
+   "ctDomains": [
+    "SegmentedControl"
+   ]
+  },
+  "ArcSelect": {
+   "file": "ArcSelect.qml",
+   "upstream": "src/TKCode.Arc/Selects/Select/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"Select…\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_padL",
+    "_padR",
+    "_valueText",
+    "_bd",
+    "_bg",
+    "_on",
+    "_off"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(var value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Select"
+   ]
+  },
+  "ArcSettingsPage": {
+   "file": "ArcSettingsPage.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"Settings\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "groups",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "active",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dirty",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_navW",
+    "_pillR",
+    "_titleT",
+    "_contentL",
+    "_contentT",
+    "_rowIn",
+    "_tile",
+    "_gap"
+   ],
+   "signals": [
+    {
+     "name": "saved",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "SettingsPage",
+    "SettingsRow"
+   ]
+  },
+  "ArcSheetStack": {
+   "file": "ArcSheetStack.qml",
+   "upstream": "src/TKCode.Arc.Special/Surfaces/SheetStack/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "depth",
+     "type": "int",
+     "default": "3",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "titles",
+     "type": "var",
+     "default": "[\"Filters\", \"Sort & group\", \"Advanced\"]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "host",
+     "type": "var",
+     "default": "root",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_scrim",
+    "_maxW",
+    "_peek",
+    "_top",
+    "_scaleStep",
+    "_dimStep",
+    "_grabW",
+    "_grabH",
+    "_close",
+    "_layer",
+    "_shrink",
+    "_y",
+    "_scale"
+   ],
+   "signals": [
+    {
+     "name": "changed",
+     "args": "(int depth)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "SheetStack",
+    "SheetStackSheet"
+   ]
+  },
+  "ArcSidebarSection": {
+   "file": "ArcSidebarSection.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "section",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "collapsed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "expanded",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "openKeys",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_rowH",
+    "_nestH",
+    "_indent",
+    "_chev",
+    "_gap",
+    "_secH",
+    "_hasKids",
+    "_open"
+   ],
+   "signals": [
+    {
+     "name": "navigate",
+     "args": "(string key)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "isOpen",
+     "args": "k",
+     "access": "public"
+    },
+    {
+     "name": "toggleOpen",
+     "args": "k",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Sidebar"
+   ]
+  },
+  "ArcSidebarTree": {
+   "file": "ArcSidebarTree.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sections",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "collapsed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "openKeys",
+     "type": "var",
+     "default": "[\"home\"]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_w",
+    "_pad"
+   ],
+   "signals": [
+    {
+     "name": "navigate",
+     "args": "(string key)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcSkeleton": {
+   "file": "ArcSkeleton.qml",
+   "upstream": "src/TKCode.Arc/**/Skeleton.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "lines",
+     "type": "int",
+     "default": "3",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "avatar",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "avatarDiameter",
+     "type": "real",
+     "default": "48",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "loading",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_n",
+    "_r",
+    "_fill"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Skeleton"
+   ]
+  },
+  "ArcSlider": {
+   "file": "ArcSlider.qml",
+   "upstream": "src/TKCode.Arc/**/Slider.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "real",
+     "default": "50",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "min",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "max",
+     "type": "real",
+     "default": "100",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isValueVisible",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "marks",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_thumb",
+    "_thick",
+    "_tick",
+    "_railH",
+    "_half",
+    "_frac",
+    "_bubbleGap",
+    "_bubbleMinH",
+    "_headerVisible"
+   ],
+   "signals": [
+    {
+     "name": "valueChangedByUser",
+     "args": "(real value)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "setFromX",
+     "args": "mx",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Slider"
+   ]
+  },
+  "ArcSparkline": {
+   "file": "ArcSparkline.qml",
+   "upstream": "src/TKCode.Arc/**/Sparkline.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "values",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "up",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "onDarkChanged",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcSpinner": {
+   "file": "ArcSpinner.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "spinnerSize",
+     "type": "real",
+     "default": "24",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "color",
+     "type": "color",
+     "default": "th ? th.c(\"Foreground\") : \"#FF1D1D1D\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "trackColor",
+     "type": "color",
+     "default": "th ? th.c(\"Border\") : \"#FFE9E9E9\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "running",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "level",
+     "type": "int",
+     "default": "th ? th.motionLevel : 2",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_full",
+    "_pulse",
+    "_t",
+    "_svg"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcSplitButton": {
+   "file": "ArcSplitButton.qml",
+   "upstream": "src/TKCode.Arc/**/SplitButton.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Export\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "icon",
+     "type": "string",
+     "default": "\"Download\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "menuItems",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_primaryPx",
+    "_secondaryW",
+    "_gap",
+    "_glyph",
+    "_rStart",
+    "_rEnd",
+    "_div",
+    "_hover"
+   ],
+   "signals": [
+    {
+     "name": "clicked",
+     "args": "()"
+    },
+    {
+     "name": "menuActivated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "SplitButton"
+   ]
+  },
+  "ArcSpreadsheet": {
+   "file": "ArcSpreadsheet.qml",
+   "upstream": "src/TKCode.Arc.AdvancedCharts/DataGrid/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "variant",
+     "type": "string",
+     "default": "\"inline\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showcase",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "editRow",
+     "type": "int",
+     "default": "root.variant === \"inline\" ? 0 : -1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "editCol",
+     "type": "string",
+     "default": "\"q1\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "query",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sortKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sortAsc",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "compact",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "onlyNegative",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "toast",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rowData",
+     "type": "var",
+     "default": "modelData",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "ck",
+     "type": "string",
+     "default": "modelData.key",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_rev",
+    "_checked",
+    "_collapsed",
+    "_hidden",
+    "_undoStack",
+    "_redoStack",
+    "_moneyCols",
+    "_d",
+    "_cols",
+    "_rows",
+    "_toolH",
+    "_headH",
+    "_rowH",
+    "_checkW",
+    "_nW",
+    "_pad",
+    "_totalH"
+   ],
+   "signals": [
+    {
+     "name": "cellEdited",
+     "args": "(int row, string column, string value)"
+    },
+    {
+     "name": "exported",
+     "args": "(int rows)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_touch",
+    "_shownCols",
+    "_visibleRows",
+    "_sumFor",
+    "_totalText",
+    "_commit",
+    "_set",
+    "_undo",
+    "_redo",
+    "_toggleCheck",
+    "_toggleAll",
+    "_archive",
+    "_toggleGroup",
+    "_toggleCol",
+    "_sort",
+    "_toolActive",
+    "_tool",
+    "_export"
+   ],
+   "ctDomains": [
+    "DataGrid"
+   ]
+  },
+  "ArcStepper": {
+   "file": "ArcStepper.qml",
+   "upstream": "src/TKCode.Arc/**/Stepper.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "steps",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "captionLabel",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "captionDetail",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "captionVisible",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_disc",
+    "_halo",
+    "_stepGap",
+    "_markerGap",
+    "_labelLH",
+    "_detailLH",
+    "_detailTop",
+    "_captionTop",
+    "_edge",
+    "_st",
+    "_last",
+    "_rim",
+    "_fill",
+    "_glyph"
+   ],
+   "signals": [
+    {
+     "name": "stepActivated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_status"
+   ],
+   "ctDomains": [
+    "Stepper"
+   ]
+  },
+  "ArcStickyList": {
+   "file": "ArcStickyList.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "groups",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_headH",
+    "_top",
+    "_h"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcSwipeActions": {
+   "file": "ArcSwipeActions.qml",
+   "upstream": "src/TKCode.Arc/**/SwipeActions.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"Invoice #1042\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "subtitle",
+     "type": "string",
+     "default": "\"Due Nov 30\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "actions",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "reveal",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "startX",
+     "type": "real",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_ext",
+    "_glyph",
+    "_bodyIn",
+    "_rowH",
+    "_more",
+    "_rad",
+    "_max"
+   ],
+   "signals": [
+    {
+     "name": "actionTriggered",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [
+    {
+     "name": "open",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "close",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": [
+    "SwipeActionsRow"
+   ]
+  },
+  "ArcSwitch": {
+   "file": "ArcSwitch.qml",
+   "upstream": "src/TKCode.Arc/Toggles/Switch/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "checked",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_tw",
+    "_th2",
+    "_thumb",
+    "_inset"
+   ],
+   "signals": [
+    {
+     "name": "toggled",
+     "args": "(bool value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcTable": {
+   "file": "ArcTable.qml",
+   "upstream": "src/TKCode.Arc/Tables/Table/*.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "columns",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "rows",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "caption",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "emptyMessage",
+     "type": "string",
+     "default": "\"No rows.\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selectedIndex",
+     "type": "int",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_compact",
+    "_headerH",
+    "_rowH",
+    "_cellI",
+    "_footerH",
+    "_stripe",
+    "_edge",
+    "_sel"
+   ],
+   "signals": [
+    {
+     "name": "rowActivated",
+     "args": "(int index)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_fixedW",
+    "_flexCount",
+    "_colW"
+   ],
+   "ctDomains": [
+    "Table"
+   ]
+  },
+  "ArcTabs": {
+   "file": "ArcTabs.qml",
+   "upstream": "src/TKCode.Arc/**/Tabs.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_inset",
+    "_edge",
+    "_pillR",
+    "_gap",
+    "_trigH",
+    "_contentGap",
+    "_shellH",
+    "_on",
+    "_dis"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_index",
+    "_movePill"
+   ],
+   "ctDomains": [
+    "Tabs",
+    "TabItem"
+   ]
+  },
+  "ArcTextarea": {
+   "file": "ArcTextarea.qml",
+   "upstream": "src/TKCode.Arc/**/Textarea.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placeholder",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "error",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "size",
+     "type": "string",
+     "default": "\"md\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "isInvalid",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "readOnly",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_minH",
+    "_pad",
+    "_frameH",
+    "_padL",
+    "_invalid",
+    "_focus",
+    "_edge",
+    "_bd"
+   ],
+   "signals": [
+    {
+     "name": "textEdited",
+     "args": "(string text)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Textarea",
+    "FieldFrame",
+    "Field",
+    "FieldTextBox",
+    "FieldMessage"
+   ]
+  },
+  "ArcTheme": {
+   "file": "ArcTheme.qml",
+   "upstream": "src/TKCode.Arc.Core/Theme/ArcDesignToken.cs + ArcPalette.cs + tests/Baselines/tokens",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "dark",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "accentIndex",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "fontFamilyOverride",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "monoFamilyOverride",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "fontFamily",
+     "type": "string",
+     "default": "fontFamilyOverride !== \"\" ? fontFamilyOverride : Dp.fontFamily(Qt.platform.os)",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "monoFamily",
+     "type": "string",
+     "default": "monoFamilyOverride !== \"\" ? monoFamilyOverride : Dp.monoFamily(Qt.platform.os)",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "stylePreset",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "cornerPreset",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "motionLevel",
+     "type": "int",
+     "default": "2",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "data",
+     "type": "var",
+     "default": "Tk.DATA",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "acc",
+     "type": "var",
+     "default": "Tk.DATA.accents[Math.max(0, Math.min(7, accentIndex))]",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "accNow",
+     "type": "var",
+     "default": "acc ? acc[dark ? \"dark\" : \"light\"] : null",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "weightRegular",
+     "type": "int",
+     "default": "400",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "weightMedium",
+     "type": "int",
+     "default": "500",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "weightSemibold",
+     "type": "int",
+     "default": "600",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "design",
+     "args": "key",
+     "access": "public"
+    },
+    {
+     "name": "c",
+     "args": "key",
+     "access": "public"
+    },
+    {
+     "name": "a",
+     "args": "key",
+     "access": "public"
+    },
+    {
+     "name": "n",
+     "args": "domain, key",
+     "access": "public"
+    },
+    {
+     "name": "ct",
+     "args": "domain, key",
+     "access": "public"
+    },
+    {
+     "name": "pad",
+     "args": "v",
+     "access": "public"
+    },
+    {
+     "name": "t4",
+     "args": "v, i",
+     "access": "public"
+    },
+    {
+     "name": "part",
+     "args": "domain, key",
+     "access": "public"
+    },
+    {
+     "name": "sidebar",
+     "args": "key",
+     "access": "public"
+    },
+    {
+     "name": "series",
+     "args": "i",
+     "access": "public"
+    },
+    {
+     "name": "dur",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "stagger",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "ease",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "spring",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "springSettle",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "springEase",
+     "args": "name, p",
+     "access": "public"
+    },
+    {
+     "name": "pulseHalf",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "busyOpacity",
+     "args": "sec",
+     "access": "public"
+    },
+    {
+     "name": "presencePose",
+     "args": "mode, p, scale, offset",
+     "access": "public"
+    },
+    {
+     "name": "popupEnter",
+     "args": "origin, offset, scale, fadeOnly, ms",
+     "access": "public"
+    },
+    {
+     "name": "popupExit",
+     "args": "origin, scale, fadeOnly, ms",
+     "access": "public"
+    },
+    {
+     "name": "rubberClamp",
+     "args": "v, min, max, dim",
+     "access": "public"
+    },
+    {
+     "name": "contentSwapOffset",
+     "args": "mode, dir, dist",
+     "access": "public"
+    },
+    {
+     "name": "rollingShortest",
+     "args": "from, to",
+     "access": "public"
+    },
+    {
+     "name": "springAnim",
+     "args": "name",
+     "access": "public"
+    },
+    {
+     "name": "motion",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "oklch",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "mixOklab",
+     "args": "a, b, t",
+     "access": "public"
+    },
+    {
+     "name": "contrast",
+     "args": "a, b",
+     "access": "public"
+    },
+    {
+     "name": "fade",
+     "args": "hex, alpha",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [
+    "_override",
+    "_coerce"
+   ],
+   "ctDomains": [
+    "Checkbox"
+   ]
+  },
+  "ArcThemeSwitcher": {
+   "file": "ArcThemeSwitcher.qml",
+   "upstream": "src/TKCode.Arc/Buttons/ThemeSwitcher/ThemeSwitcher.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "dark",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "iconOnly",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "default": "\"Theme\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_ext",
+    "_wrap",
+    "_gap",
+    "_rad"
+   ],
+   "signals": [
+    {
+     "name": "changeRequested",
+     "args": "(bool nextDark)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "ThemeSwitcher"
+   ]
+  },
+  "ArcToast": {
+   "file": "ArcToast.qml",
+   "upstream": "src/TKCode.Arc/**/Toast.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "description",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tone",
+     "type": "string",
+     "default": "\"success\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "closable",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "toastWidth",
+     "type": "real",
+     "default": "360",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_padL",
+    "_padT",
+    "_padB",
+    "_iconD",
+    "_iconGap",
+    "_closeD",
+    "_edge",
+    "_r",
+    "_copyY",
+    "_glyph",
+    "_fill",
+    "_ring"
+   ],
+   "signals": [
+    {
+     "name": "dismissed",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Toast"
+   ]
+  },
+  "ArcToggleGroup": {
+   "file": "ArcToggleGroup.qml",
+   "upstream": "src/TKCode.Arc/**/ToggleGroup.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "options",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "value",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "small",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "multiple",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_size",
+    "_gap",
+    "_pad",
+    "_icon",
+    "_iconGap",
+    "_unit",
+    "_rad",
+    "_on"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(string value)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [
+    "_has"
+   ],
+   "ctDomains": [
+    "ToggleGroup"
+   ]
+  },
+  "ArcTooltip": {
+   "file": "ArcTooltip.qml",
+   "upstream": "src/TKCode.Arc/**/Tooltip.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "text",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "placement",
+     "type": "string",
+     "default": "\"top\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_maxW",
+    "_px",
+    "_py",
+    "_edge",
+    "_r"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "Tooltip"
+   ]
+  },
+  "ArcTopBar": {
+   "file": "ArcTopBar.qml",
+   "upstream": null,
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "collapsed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [
+    {
+     "name": "toggleSidebar",
+     "args": "()"
+    },
+    {
+     "name": "openSearch",
+     "args": "()"
+    },
+    {
+     "name": "cycleTheme",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "ArcUserMenu": {
+   "file": "ArcUserMenu.qml",
+   "upstream": "src/TKCode.Arc/**/UserMenu.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "open",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "default": "\"Ada Lovelace\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "role",
+     "type": "string",
+     "default": "\"Workspace owner\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "status",
+     "type": "string",
+     "default": "\"online\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "items",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_face",
+    "_trigH",
+    "_dot",
+    "_chev",
+    "_gap",
+    "_inset",
+    "_panelGap",
+    "_status"
+   ],
+   "signals": [
+    {
+     "name": "activated",
+     "args": "(int index)"
+    },
+    {
+     "name": "themeChangeRequested",
+     "args": "(string next)"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "UserMenu"
+   ]
+  },
+  "ArcWorkflow": {
+   "file": "ArcWorkflow.qml",
+   "upstream": "src/TKCode.Arc.Workflow/WorkflowCanvas/*.cs + templates/.../ArcWorkflowApp",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "variant",
+     "type": "string",
+     "default": "\"run\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "showcase",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "labels",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selected",
+     "type": "int",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "zoom",
+     "type": "real",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "runIdx",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "viewX",
+     "type": "real",
+     "default": "0; property real viewY: 0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selectedNodes",
+     "type": "var",
+     "default": "root.selected >= 0 && root._nodes[root.selected] ? [root._nodes[root.selected]] : []",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "ni",
+     "type": "int",
+     "default": "index",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_rev",
+    "_undoStack",
+    "_nodes",
+    "_d",
+    "_grid",
+    "_dot",
+    "_wire",
+    "_nodeW",
+    "_nodeH",
+    "_toolH",
+    "_dotSvg"
+   ],
+   "signals": [],
+   "functions": [
+    {
+     "name": "selectNode",
+     "args": "i",
+     "access": "public"
+    },
+    {
+     "name": "clearSelection",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "undo",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "redo",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "scrollIntoView",
+     "args": "i, animate",
+     "access": "public"
+    },
+    {
+     "name": "beginMove",
+     "args": "i",
+     "access": "public"
+    },
+    {
+     "name": "updateDrag",
+     "args": "i, dx, dy",
+     "access": "public"
+    },
+    {
+     "name": "commitMove",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "deleteSelection",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "arrangeNodes",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "resetRun",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "loadLayout",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "startRun",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "zoomIn",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "zoomOut",
+     "args": "",
+     "access": "public"
+    },
+    {
+     "name": "zoomTo",
+     "args": "z",
+     "access": "public"
+    },
+    {
+     "name": "fitToContent",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [
+    "_touch",
+    "_oxFor",
+    "_snapshot",
+    "_pushUndo",
+    "_restore",
+    "_runStep",
+    "_hex",
+    "_alpha",
+    "_wires"
+   ],
+   "ctDomains": [
+    "WorkflowCanvas",
+    "WorkflowNodeCard"
+   ]
+  },
+  "ArcWorkflowNode": {
+   "file": "ArcWorkflowNode.qml",
+   "upstream": "src/TKCode.Arc.Workflow/WorkflowNode + WorkflowNodeCard tokens",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "node",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "compact",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selected",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_h",
+    "_r",
+    "_state",
+    "_gx",
+    "_accX"
+   ],
+   "signals": [
+    {
+     "name": "invoked",
+     "args": "()"
+    },
+    {
+     "name": "dragBegun",
+     "args": "()"
+    },
+    {
+     "name": "dragMoved",
+     "args": "(real dx, real dy)"
+    },
+    {
+     "name": "dragEnded",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": [
+    "WorkflowNodeCard"
+   ]
+  },
+  "Demo": {
+   "file": "Demo.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageAnalytics": {
+   "file": "PageAnalytics.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageBilling": {
+   "file": "PageBilling.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/BillingPage.axaml",
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "info",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageButtons": {
+   "file": "PageButtons.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_swDarkA",
+    "_swDarkB"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageControls": {
+   "file": "PageControls.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageControls2": {
+   "file": "PageControls2.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageControls3": {
+   "file": "PageControls3.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageControls4": {
+   "file": "PageControls4.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageCustomers": {
+   "file": "PageCustomers.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/CustomersPage.axaml",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "customers",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "search",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "status",
+     "type": "string",
+     "default": "\"all\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "page",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pageCount",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "selectedIndex",
+     "type": "int",
+     "default": "-1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "pageSize",
+     "type": "int",
+     "default": "12",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "filtered",
+     "type": "var",
+     "default": "{",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "pageRows",
+     "type": "var",
+     "default": "{",
+     "readonly": true,
+     "access": "public"
+    },
+    {
+     "name": "columns",
+     "type": "var",
+     "default": "[",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageDashboard": {
+   "file": "PageDashboard.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/DashboardPage.axaml + ViewModels/DashboardPageViewModel.cs",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "model",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "subtitle",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "chartTitle",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "chartDescription",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "chartVisible",
+     "type": "bool",
+     "default": "true",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_hasChart"
+   ],
+   "signals": [],
+   "functions": [
+    {
+     "name": "t",
+     "args": "key, fallback",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageFoundation": {
+   "file": "PageFoundation.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "durNames",
+     "type": "var",
+     "default": "[\"Instant\", \"Fast\", \"Exit\", \"Standard\", \"Considered\", \"CssSpring\"]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "springNames",
+     "type": "var",
+     "default": "[\"Smooth\", \"Snappy\", \"Morph\", \"Responsive\", \"Gentle\", \"Quick\", \"Settle\"]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "easeNames",
+     "type": "var",
+     "default": "[\"Enter\", \"Exit\", \"Standard\", \"InOut\"]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "swatches",
+     "type": "var",
+     "default": "[\"#7747FF\", \"#0DB879\", \"#F3AD20\", \"#585858\"]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "svgColor",
+     "args": "c",
+     "access": "public"
+    },
+    {
+     "name": "springSvg",
+     "args": "name",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageInteractions": {
+   "file": "PageInteractions.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageLayout": {
+   "file": "PageLayout.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageMenus": {
+   "file": "PageMenus.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageMotion": {
+   "file": "PageMotion.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "iconKeys",
+     "type": "var",
+     "default": "Object.keys(Ic.PATHS)",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "glideIdx",
+     "type": "int",
+     "default": "1",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "swapPages",
+     "type": "var",
+     "default": "[_pgA, _pgB]",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [
+    {
+     "name": "factRows",
+     "args": "",
+     "access": "public"
+    }
+   ],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageSettings": {
+   "file": "PageSettings.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/SettingsPage.axaml",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "hostApp",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "section",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sections",
+     "type": "var",
+     "default": "[",
+     "readonly": true,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_on",
+    "_on"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageSurfaces": {
+   "file": "PageSurfaces.qml",
+   "upstream": null,
+   "stability": "preview",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "PageTeam": {
+   "file": "PageTeam.qml",
+   "upstream": "templates/TKCode.Arc.Templates/content/ArcAdminApp/App/Pages/TeamPage.axaml",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "strings",
+     "type": "var",
+     "default": "({})",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "ws",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "tab",
+     "type": "int",
+     "default": "0",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_on"
+   ],
+   "signals": [],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  },
+  "Sidebar": {
+   "file": "Sidebar.qml",
+   "upstream": "src/TKCode.Arc/Navigation/Sidebar + MainView.axaml:66-74",
+   "stability": "stable",
+   "properties": [
+    {
+     "name": "th",
+     "type": "var",
+     "default": "null",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "collapsed",
+     "type": "bool",
+     "default": "false",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "sections",
+     "type": "var",
+     "default": "[]",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "currentKey",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "workspaceName",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "accountName",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    },
+    {
+     "name": "accountRole",
+     "type": "string",
+     "default": "\"\"",
+     "readonly": false,
+     "access": "public"
+    }
+   ],
+   "internalProperties": [
+    "_w",
+    "_rowH",
+    "_pad",
+    "_on",
+    "_hover"
+   ],
+   "signals": [
+    {
+     "name": "navigate",
+     "args": "(string key)"
+    },
+    {
+     "name": "toggleCollapse",
+     "args": "()"
+    },
+    {
+     "name": "signOut",
+     "args": "()"
+    }
+   ],
+   "functions": [],
+   "internalFunctions": [],
+   "ctDomains": []
+  }
+ }
+}

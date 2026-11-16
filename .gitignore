@@ -1,0 +1,19 @@
+# Local QML / tooling artifacts
+.qmlc/
+*.qmlc
+*.jsc
+*.log
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node
+node_modules/
