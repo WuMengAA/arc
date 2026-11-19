@@ -3,6 +3,34 @@
 All notable changes to the TKCode.Arc → Qt/QML port are documented here.
 Versions use the `port/<semver>` tag scheme. The upstream pin is recorded in every release.
 
+## [port/v0.2.0] — 2026-11-20
+
+Full-coverage port: every upstream component that ships both `<Name>.cs` and `Themes/<Name>Theme.axaml`
+now has an `Arc<Name>.qml` counterpart. No upstream behaviour was re-specified — tokens are read through
+`th.ct("<Domain>", "<Key>")` with the exact domains/keys from the baseline JSON.
+
+- **Coverage**: upstream 146 complete components → **80 newly ported**, package now **213 QML types**
+  (was 125). Verified by directory scan of `src/TKCode.Arc/**` against this package's file names.
+- **New types (80)**: AnimatedCounter, TextMorph, TextShimmer, SlotText, TextReveal, InViewTitle,
+  ExpandableText, Gauge, WaffleChart, ActivityHeatmap, Ridgeline, SlopeChart, Streamgraph, Treemap,
+  SplitBar, BrushChart, AvatarGroup, PresenceStack, BackToTop, TilePanel, WaterfallPanel, CyclicPanel,
+  MetricTicker, TreeView, TreeTable (+TreeTableHeader/Row), JsonViewer, CodeBlock, FilterToolbar,
+  ReorderableList, NumberFilterBox, TextFilterBox, Form, FormItem, TokenTextEditor, TagInput, MorphSelect,
+  Cascader, TreeSelect (+TreeSelectValueRow/Row), TransferBox, SearchField, PasswordField,
+  PasswordStrength, ExpandingSearch, NumberField, MoneyInput, Countdown, UsageMeter, CookieConsent,
+  ToastStack, Carousel, CardStack, ImageCompare, ArcWindow, ColorPicker (+ColorPickerPanel),
+  DateRangePicker (+DayCell/MonthPane), TimePicker, FluidTabControl, OnboardingChecklist, ScrubInput,
+  ShortcutRecorder, OnScreenKeyboard, ElasticSlider, RangeHistogramSlider, RulerSlider, PhoneInput,
+  MentionInput, FileDropzone, SignaturePad, Markdown, ChatThread, CommentThread (+CommentThreadItem),
+  Timeline, AvatarUpload, PropertyGrid, DataFlow, MultiRegionFailover, PaymentFlow, VectorSearch,
+  RichTextEditor, PageViewer.
+- **Generated contract**: `tools/gen_public_api.mjs` regenerates `public-api.json` (213 types:
+  191 stable + 22 preview) from the QML sources, so the contract cannot drift from the code.
+- **Gates**: `tools/check.mjs` → `CHECK qml=213 js=10 qmldir=213 fail=0 warn=0`;
+  `tools/golden.mjs --check` unchanged (`GOLDEN_OK`, same upstream-text and sample-data SHAs);
+  `tools/pin.mjs` → `PIN_OK`.
+- **Load probe**: all 209 `th`-bearing types instantiated in one offscreen window → zero QML errors.
+
 ## [port/v0.1.0] — 2026-11-16
 
 First standalone, pinnable release of the independent third-party port.

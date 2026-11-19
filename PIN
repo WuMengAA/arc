@@ -1,17 +1,17 @@
 # arc port pin — machine-readable; do not hand-edit
 schema: arc-port-pin/v1
 port_repo: https://github.com/WuMengAA/arc
-port_tag: port/v0.1.0
-port_commit: git rev-parse port/v0.1.0^{commit}   # tag is the immutable commit alias
+port_tag: port/v0.2.0
+port_commit: git rev-parse port/v0.2.0^{commit}   # tag is the immutable commit alias
 module_uri: arc
 module_version: 1.0
 upstream_repo: AIDotNet/TKCode.Arc
 upstream_commit: 695a85d727772490c03ff6586455796d6f4af16f
 upstream_describe: v1.1.0-6-g695a85d7
 upstream_license: MIT
-files: 151
+files: 241
 sha256sums: SHA256SUMS
-aggregate_sha256: 510ab26ef7bcdb897278ed006e3f42aec8612dc6af8750ff352a9c8c9feac8b4
+aggregate_sha256: 9c8ef8119a778055f7a1b4a1ebc24f31772ab6670847d5dd567214abf4eea329
 cmp_manifest: qmldir public-api.json Tokens.js ControlTokens.js PORTING-MAP.md BREAKING.md GOLDEN.json LICENSE THIRD-PARTY-NOTICES.md README.md CHANGELOG.md INTEGRATION.md
 # Two-consumer acceptance: copy this directory to both endpoints, then compare SHA256SUMS byte-for-byte.
 # Rollback: point the consumer PIN at the previous port tag; see INTEGRATION.md §Canary rollback.

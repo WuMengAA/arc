@@ -15,7 +15,7 @@ the library as read-only and adapt pages outside it. The package directory must 
 1. **Directory import** — copy `arc/` into the consumer QML tree and use `import "." as Arc` (or the relative directory).
    Keep the directory self-contained; do not edit library files for page-specific content.
 2. **Module import** — place `arc/` under any import root and add that root to `QML_IMPORT_PATH` / `qml -I`;
-   then `import arc 1.0`. `qmldir` registers all 125 QML types.
+   then `import arc 1.0`. `qmldir` registers all 213 QML types.
 3. **Standalone preview** — run `qml Demo.qml` from this repository. `Demo.qml` injects synthetic `SampleData.js`;
    production hosts should leave the four data sources empty unless they supply real data.
 
@@ -67,7 +67,7 @@ Arc Pro components, copy and assets are not used.
 
 The translation contract between upstream .NET files and this QML package is `PORTING-MAP.md`:
 path classes, component naming, property/method renames, `ct()` token keys, and the Theme/Md3 boundary.
-`public-api.json` is the machine-readable public surface for all 125 types; `BREAKING.md` is the
+`public-api.json` is the machine-readable public surface for all 213 types; `BREAKING.md` is the
 change list consumers must read before switching port tags.
 
 The package does **not** import the host's `Theme` singleton and does **not** provide an Md3 mapping layer.

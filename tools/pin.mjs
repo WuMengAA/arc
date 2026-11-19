@@ -4,6 +4,9 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+// Tag is passed in so a re-pin never rewrites history: node tools/pin.mjs [packageRoot] [portTag]
+const argvTag = process.argv.slice(2).find((a) => /^port\//.test(a));
+const portTag = argvTag || process.env.PORT_TAG || "port/v0.1.0";
 const sha = (v) => crypto.createHash("sha256").update(v).digest("hex");
 const skip = new Set([".git", "SHA256SUMS", "PIN"]);
 const files = [];
@@ -21,8 +24,8 @@ const pin = [
   "# arc port pin — machine-readable; do not hand-edit",
   "schema: arc-port-pin/v1",
   "port_repo: https://github.com/WuMengAA/arc",
-  "port_tag: port/v0.1.0",
-  "port_commit: git rev-parse port/v0.1.0^{commit}   # tag is the immutable commit alias",
+  "port_tag: " + portTag,
+  "port_commit: git rev-parse " + portTag + "^{commit}   # tag is the immutable commit alias",
   "module_uri: arc",
   "module_version: 1.0",
   "upstream_repo: AIDotNet/TKCode.Arc",

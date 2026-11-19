@@ -1,5 +1,9 @@
 # TKCode.Arc → Qt/QML 移植对照
 
+> **port/v0.2.0** — 上游 146 个「`<Name>.cs` + `Themes/<Name>Theme.axaml` 齐全」的组件现已 **146/146 全部有同名 `Arc<Name>.qml`**（213 个 QML 类型）。
+> 覆盖对照见 [PORTING-MAP.md §10](PORTING-MAP.md)，逐件差异见 [CHANGELOG.md](CHANGELOG.md)。
+
+
 > **跟进上游先读** [PORTING-MAP.md](PORTING-MAP.md)：上游 `.cs`/`.axaml`/令牌 JSON → 本地 `.qml` 的路径分类、组件改名、prop/方法改名、`ct()` 键、Theme/Md3 边界、新版判定流程。公开面 `public-api.json`，破坏性变更 `BREAKING.md`，钉版本 `PIN` + `SHA256SUMS`，文本 golden `GOLDEN.json`。
 
 ## 0. 这是什么 / 怎么用（第三方开源移植包）
@@ -13,11 +17,11 @@
 
 | 依赖 | 版本 | 说明 |
 |---|---|---|
-| QtQuick | 2.15 | 125 个组件/页面 `.qml` 只 import 它 |
+| QtQuick | 2.15 | 213 个组件/页面 `.qml` 只 import 它 |
 | QtQuick.Window | 2.15 | 仅包内 `Demo.qml` 用（宿主无需） |
 | 系统 UI 字体 | — | `ArcDisplay.js` 按 `Qt.platform.os` 回退（`windows`→Segoe UI，`osx/ios`→Helvetica Neue，`linux/wasm`→Noto Sans，`android`→Roboto，`unix`→DejaVu Sans；等宽另有 MonoFallback），可由 `ArcTheme.fontFamilyOverride` / `monoFamilyOverride` 覆盖，**不捆绑字体** |
 
-实测耦合扫描（125 个 `.qml`，含 `Demo.qml`）：`backendRef` 0、`ctx.window` 0、`QtShadcn` 0、
+实测耦合扫描（213 个 `.qml`，含 `Demo.qml`）：`backendRef` 0、`ctx.window` 0、`QtShadcn` 0、
 `QtQuick.Controls` 0、`QtQuick.Layouts` 0、`XMLHttpRequest`/`WebSocket`/`fetch`/`JSON.parse` 0、
 `image://` provider 0、宿主绝对路径引用 0（仅注释里提过生成器，已中性化）。
 二进制资产 0（无 png/jpg/svg 文件/ttf/otf/dll）。**复制 `arc/` 一个目录即可运行。**
@@ -75,7 +79,7 @@ arc/
 ├── Demo.qml               独立预览窗口（Window）
 ├── tools/gen_tokens.mjs   上游令牌基线复现脚本（参数化，非运行依赖）
 ├── tools/gen_qmldir.mjs   qmldir 全量登记生成器（参数化，非运行依赖）
-├── qmldir                 `module arc` 1.0，125 个类型全量登记（目录名须为 arc）
+├── qmldir                 `module arc` 1.0，213 个类型全量登记（目录名须为 arc）
 ├── README.md              本文件（移植对照 + 使用说明）
 ├── LICENSE                上游 MIT 全文 + 移植层 MIT
 └── THIRD-PARTY-NOTICES.md 许可与归属（含 Arc Pro 边界）
@@ -385,7 +389,7 @@ ToolGroup(Explorer,Search) Size=22 / Documents Size=70 / TerminalGroup Size=30 /
 
 | issue | 级别 | 整改 | 落点 |
 |---|---|---|---|
-| 1 qmldir 只注册 2/125 | P1 | `qmldir` 全量登记 125 个 `TypeName 1.0 TypeName.qml`；新增参数化生成器，模块导入 `import arc 1.0` 可用 | `qmldir` / `tools/gen_qmldir.mjs` |
+| 1 qmldir 只注册 2/125 | P1 | `qmldir` 全量登记（现 213 个）`TypeName 1.0 TypeName.qml`；新增参数化生成器，模块导入 `import arc 1.0` 可用 | `qmldir` / `tools/gen_qmldir.mjs` |
 | 2 ArcBadge 动态令牌键 | P1 | 删 `_toneKey + 后缀`，改 `_neutral` / success / warning / danger 静态键表；accent/info 走 `th.a("subtle")` + `InfoRingOpacity`，补齐 hover 分支 | `ArcBadge.qml` |
 | 3 主题开关浅深漂移 | P2 | 改受控：`onClicked` 只发 `changeRequested(!root.dark)`；调用方 `PageButtons.qml` 用 `_swDarkA/B` 回填，`AnalyticsApp.qml` 原已是回填接法 | `ArcThemeSwitcher.qml` / `PageButtons.qml` |
 | 4 字体硬编码非 Windows 回退 | P2 | `ArcDisplay.js` 增 `FontFallback` / `MonoFallback` + `fontFamily(os)` / `monoFamily(os)`；`ArcTheme` 暴露 override；345+3 处注入改按 `Qt.platform.os` 取值 | `ArcDisplay.js` / `ArcTheme.qml` / 98 个 `.qml` |
