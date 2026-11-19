@@ -11,7 +11,7 @@ upstream_describe: v1.1.0-6-g695a85d7
 upstream_license: MIT
 files: 151
 sha256sums: SHA256SUMS
-aggregate_sha256: 7bdc6df39605f706b130aa530c507c8eda5266943639d9fa8f258b4856f94ac8
+aggregate_sha256: 510ab26ef7bcdb897278ed006e3f42aec8612dc6af8750ff352a9c8c9feac8b4
 cmp_manifest: qmldir public-api.json Tokens.js ControlTokens.js PORTING-MAP.md BREAKING.md GOLDEN.json LICENSE THIRD-PARTY-NOTICES.md README.md CHANGELOG.md INTEGRATION.md
 # Two-consumer acceptance: copy this directory to both endpoints, then compare SHA256SUMS byte-for-byte.
 # Rollback: point the consumer PIN at the previous port tag; see INTEGRATION.md §Canary rollback.
